@@ -11,7 +11,7 @@ import {
   I18nManager,
 } from 'react-native';
 import Ripple from 'react-native-material-ripple';
-import { OutlinedTextField } from 'react-native-material-textfield';
+import { TextField } from 'react-native-material-textfield';
 
 import DropdownItem from '../item';
 import styles from './styles';
@@ -425,7 +425,7 @@ export default class Dropdown extends PureComponent {
       String(title);
 
     return (
-      <OutlinedTextField
+      <TextField
         label=''
         labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
 
